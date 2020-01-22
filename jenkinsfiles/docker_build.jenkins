@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker/toolbox') {
-                	bat 'docker build . '
+                	bat 'docker build -t jenkins_test . '
                 }
             }
         }
